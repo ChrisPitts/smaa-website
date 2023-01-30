@@ -71,7 +71,9 @@ header{
 
         .dropdown-menu{
             position: absolute;
-            left: 0;
+            text-align: left;
+            width: 150px;
+            left: -30px;
             top: calc(100% + 5px);
             background-color: $nav-color;
             border-radius: 10px;
@@ -80,11 +82,15 @@ header{
             transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
             pointer-events: none;
             transform: translateY(-10px);
+            a{
+                display: block;
+                margin-top: 5px;
+            }
 
         }
 
-        & > .link:focus{
-            
+        &.active > .link{
+
             &::before{
                 border-top: $triangle-size solid $font-color;
                 border-left: $triangle-size solid transparent;

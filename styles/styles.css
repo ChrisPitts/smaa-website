@@ -53,7 +53,9 @@ header .dropdown > .link::before {
 }
 header .dropdown .dropdown-menu {
   position: absolute;
-  left: 0;
+  text-align: left;
+  width: 150px;
+  left: -30px;
   top: calc(100% + 5px);
   background-color: #4da8dd;
   border-radius: 10px;
@@ -63,11 +65,15 @@ header .dropdown .dropdown-menu {
   pointer-events: none;
   transform: translateY(-10px);
 }
-header .dropdown > .link:focus::before {
+header .dropdown .dropdown-menu a {
+  display: block;
+  margin-top: 5px;
+}
+header .dropdown.active > .link::before {
   border-top: 5px solid white;
   border-left: 5px solid transparent;
 }
-header .dropdown > .link:focus + .dropdown-menu {
+header .dropdown.active > .link + .dropdown-menu {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0px);
