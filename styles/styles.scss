@@ -32,7 +32,7 @@ header{
     nav{
         display: flex;
         justify-content: space-around;
-        width: 90%;
+        width: 60%;
 
         button, a{
             background-color: $nav-color;
@@ -103,4 +103,10 @@ header{
             }
         } // end of > .link:focus
     } // end of dropdown
+
+    .social-icons{
+        width: 150px;
+        display:flex;
+        justify-content: space-between;
+    }
 } // end of header
