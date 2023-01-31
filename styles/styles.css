@@ -29,6 +29,10 @@ header nav button, header nav a {
   font-size: 1em;
   text-decoration: none;
 }
+header nav .current {
+  text-decoration: underline;
+  color: #e52a83;
+}
 header nav .link {
   transition: color 0.3s ease-in-out;
 }
@@ -82,4 +86,30 @@ header .social-icons {
   width: 150px;
   display: flex;
   justify-content: space-between;
+}
+
+main form {
+  margin: 10px 150px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 20px;
+  align-items: center;
+  justify-items: left;
+}
+main form input {
+  width: 100%;
+  color: black;
+  text-align: left;
+}
+main form .checkboxes {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr;
+}
+main form button {
+  background-color: #e52a83;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: auto;
 }/*# sourceMappingURL=styles.css.map */

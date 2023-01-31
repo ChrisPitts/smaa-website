@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/src/js/animations.js" defer></script>
+    <script src="/src/js/volunteer-form-handler.js"></script>
+    <title>SMAA</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/img/logo.jpg" height="80px"></a>
+        <nav>
+            <a class="link" href="#">About Us</a>
+            <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdymu9nRJOlcjQHysooPwHrLotZ7-thdmOP9dZ6hxUt2HFarQ/viewform">Resources</a>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Forms</button>
+                <div class="dropdown-menu">
+                    <a class="link current" href="/forms/volunteer.html">Volunteer</a>
+                    <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdymu9nRJOlcjQHysooPwHrLotZ7-thdmOP9dZ6hxUt2HFarQ/viewform">Kit Request</a>
+                    <a class="link" href="#">Slack</a>
+                    <a class="link" href="#">Contact</a>
+                </div>
+            </div>
+            <a class="link" href="#">Donate</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/smabortionactivists/">
+                <img src="/img/social-media-icons/icon-instagram.png" width="50px">
+            </a>
+            <a href="https://twitter.com/smabortionact">
+                <img src="/img/social-media-icons/icon-twitter.png" width="50px">
+            </a>
+        </div>
+        
+    </header>
+    <main>
+        <h1>Volunteer Signup Form</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="pronouns">Pronouns</label>
+            <input type="text" name="pronouns" id="pronouns" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <label for="emergency">Emergency Contact Information</label>
+            <input type="text" name="emergency" id="emergency" required>
+
+            <label for="street">Street Address</label>
+            <input type="text" name="street" id="street">
+
+            <label for="availibility">Availibility</label>
+            <input type="text" name="availibility" id="availibility" required>
+
+            <p>Interests</p>
+            <div class="checkboxes">
+                <label for="canvassing">Canvassing</label>
+                <input type="checkbox" name="canvassing" id="canvassing">
+
+                <label for="fundraising">Fundraising</label>
+                <input type="checkbox" name="canvassing" id="canvassing">
+
+                <label for="vol-leadership">Volunteer Leadership</label>
+                <input type="checkbox" name="vol-leadership" id="vol-leadership">
+            </div>
+
+            <label for="skills">Special Skills</label>
+            <input type="text" name="skills" id="skills">
+
+            <p>Interested in Leadership?</p>
+            <div class="checkboxes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="leadership" id="yes">
+
+                <label for="no">No</label>
+                <input type="radio" name="leadership" id="no">
+
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="leadership" id="maybe">
+            </div>
+            
+            <div>Captcha</div>
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

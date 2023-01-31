@@ -34,11 +34,19 @@ header{
         justify-content: space-around;
         width: 60%;
 
+        
+
         button, a{
             background-color: $nav-color;
             border: none;
             font-size: $font-size-nav;
             text-decoration: none;
+            
+        }
+
+        .current{
+            text-decoration: underline;
+            color: $container-background-color;
         }
 
         .link{
@@ -110,3 +118,32 @@ header{
         justify-content: space-between;
     }
 } // end of header
+
+main{
+    form{
+        margin: 10px 150px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 20px;
+        align-items: center;
+        justify-items: left;
+        input{
+            width: 100%;
+            color: black;
+            text-align: left;
+        }
+
+        .checkboxes{
+            width: 100%;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: 1fr 1fr;
+        }
+        button{
+            background-color: $container-background-color;
+            padding: 5px 10px;
+            border-radius: 8px;
+            margin: auto;
+        }
+    }
+}
