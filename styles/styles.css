@@ -94,9 +94,20 @@ main section {
   padding: 20px;
   border-radius: 20px;
 }
-main section.socials .container {
+main section .container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section .payment-item {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(#a8bcef, #4da8dd);
+}
+main section .payment-item:hover {
+  background: linear-gradient(#4da8dd, #a8bcef);
 }
 main section.socials .social-header {
   display: flex;
@@ -112,7 +123,7 @@ main section.socials .instagram-media {
   margin: 1px;
   min-width: 326px;
   padding: 0;
-  width: 600px;
+  width: 500px;
 }
 main form {
   margin: 10px 150px;

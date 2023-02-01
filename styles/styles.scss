@@ -126,14 +126,28 @@ main{
         margin: 10px 100px;
         padding: 20px;
         border-radius: 20px;
-    }
 
-    section.socials{
-        
         .container{
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
         }
+
+        .payment-item{
+            text-decoration: none;
+            border-radius: 20px;
+            padding:10px;
+            background: linear-gradient($background-color, $nav-color);
+
+            &:hover{
+                background: linear-gradient($nav-color, $background-color);
+            }
+        }
+    }
+    section.socials{
+        
 
         .social-header{
             display: flex;
@@ -150,7 +164,7 @@ main{
             // max-width:540px; 
             min-width:326px; 
             padding:0;
-            width: 600px; 
+            width: 500px; 
             // width:99.375%; 
             // width:-webkit-calc(100% - 2px); 
             // width:calc(100% - 2px);
