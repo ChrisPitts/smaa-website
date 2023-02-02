@@ -9,6 +9,8 @@ $triangle-size: 5px;
 $font-size: 1.5em;
 $font-size-nav: 1em;
 
+$nav-height: 100px;
+
 *{
     box-sizing: border-box;
     color: white;
@@ -20,14 +22,20 @@ $font-size-nav: 1em;
 body {
     font-size: $font-size;
     background: $background-color;
+    margin-top: $nav-height;
 }
 
 header{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    z-index: 5;
     background-color: $nav-color;
     padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: $nav-height;
 
     nav{
         display: flex;
@@ -121,11 +129,49 @@ header{
 
 main{
 
+    .circle{border-radius: 50%;}
     section{
         background-color: $container-background-color;
         margin: 10px 100px;
         padding: 20px;
         border-radius: 20px;
+        height: calc(100vh - $nav-height);
+        
+        &.about{
+            background-color: $background-color;
+            position: relative;
+
+            .circle{
+                background: $container-background-color;
+                position: absolute;
+                top: 50%;
+                // margin-top: -150px;
+                width: 5px;
+                height: 5px;
+                left: 50%;
+                // margin-left: -150px;
+                transition: transform 0.5s ease-in, 
+                    width 0.5s ease-in, 
+                    height 0.5s ease-in,
+                    margin-top 0.5s ease-in,
+                    margin-left 0.5s ease-in;
+    ;
+            }
+            
+            .mission{
+                position: relative;
+                width: 500px;
+                height: 500px;
+                left: 50%;
+                top: 50%;
+                margin-left: -250px;
+                margin-top: -250px;
+                // opacity: 0.5;
+            }
+            
+        }
+        
+        
 
         .container{
             display: flex;

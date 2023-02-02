@@ -9,14 +9,20 @@
 body {
   font-size: 1.5em;
   background: #a8bcef;
+  margin-top: 100px;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
   background-color: #4da8dd;
   padding: 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 header nav {
   display: flex;
@@ -88,11 +94,37 @@ header .social-icons {
   justify-content: space-between;
 }
 
+main .circle {
+  border-radius: 50%;
+}
 main section {
   background-color: #e52a83;
   margin: 10px 100px;
   padding: 20px;
   border-radius: 20px;
+  height: calc(100vh - 100px);
+}
+main section.about {
+  background-color: #a8bcef;
+  position: relative;
+}
+main section.about .circle {
+  background: #e52a83;
+  position: absolute;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  left: 50%;
+  transition: transform 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, margin-top 0.5s ease-in, margin-left 0.5s ease-in;
+}
+main section.about .mission {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
 }
 main section .container {
   display: flex;
