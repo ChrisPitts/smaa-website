@@ -100,6 +100,7 @@ main .circle {
 main section {
   padding: 20px;
   height: calc(100vh - 100px);
+  border: 1px solid black;
 }
 main section.about {
   background-color: #a8bcef;
@@ -122,6 +123,11 @@ main section.about .mission {
   top: 50%;
   margin-left: -250px;
   margin-top: -250px;
+}
+main section.paralax {
+  background-image: url("/img/rally.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 300%;
 }
 main .container {
   display: flex;

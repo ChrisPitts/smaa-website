@@ -137,6 +137,7 @@ main{
         // background-color: $container-background-color;
         padding: 20px;
         height: calc(100vh - $nav-height);
+        border: 1px solid black;
     }
     
     section.about{
@@ -170,6 +171,13 @@ main{
             // opacity: 0.5;
         }
             
+    }
+
+    section.paralax{
+        background-image: url("/img/rally.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 300%;
+        // background-position-y: -200px;
     }
         
         
