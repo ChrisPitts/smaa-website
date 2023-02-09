@@ -126,19 +126,19 @@ main section.about .mission {
   margin-left: -250px;
   margin-top: -250px;
 }
-main section .container {
+main .container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-main section .payment-item {
+main .payment-item {
   text-decoration: none;
   border-radius: 20px;
   padding: 10px;
   background: linear-gradient(#a8bcef, #4da8dd);
 }
-main section .payment-item:hover {
+main .payment-item:hover {
   background: linear-gradient(#4da8dd, #a8bcef);
 }
 main section.socials .social-header {

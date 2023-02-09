@@ -136,64 +136,61 @@ main{
         padding: 20px;
         border-radius: 20px;
         height: calc(100vh - $nav-height);
+    }
+    
+    section.about{
+        background-color: $background-color;
+        position: relative;
+
+        .circle{
+            background: $container-background-color;
+            position: absolute;
+            top: 50%;
+            // margin-top: -150px;
+            width: 5px;
+            height: 5px;
+            left: 50%;
+            // margin-left: -150px;
+            transition: transform 0.5s ease-in, 
+            width 0.5s ease-in, 
+            height 0.5s ease-in,
+            margin-top 0.5s ease-in,
+            margin-left 0.5s ease-in;
+        }
         
-        &.about{
-            background-color: $background-color;
+        .mission{
             position: relative;
-
-            .circle{
-                background: $container-background-color;
-                position: absolute;
-                top: 50%;
-                // margin-top: -150px;
-                width: 5px;
-                height: 5px;
-                left: 50%;
-                // margin-left: -150px;
-                transition: transform 0.5s ease-in, 
-                    width 0.5s ease-in, 
-                    height 0.5s ease-in,
-                    margin-top 0.5s ease-in,
-                    margin-left 0.5s ease-in;
-    ;
-            }
-            
-            .mission{
-                position: relative;
-                width: 500px;
-                height: 500px;
-                left: 50%;
-                top: 50%;
-                margin-left: -250px;
-                margin-top: -250px;
-                // opacity: 0.5;
-            }
-            
+            width: 500px;
+            height: 500px;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -250px;
+            // opacity: 0.5;
         }
+            
+    }
         
         
 
-        .container{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
-        }
+    .payment-item{
+        text-decoration: none;
+        border-radius: 20px;
+        padding:10px;
+        background: linear-gradient($background-color, $nav-color);
 
-        .payment-item{
-            text-decoration: none;
-            border-radius: 20px;
-            padding:10px;
-            background: linear-gradient($background-color, $nav-color);
-
-            &:hover{
-                background: linear-gradient($nav-color, $background-color);
-            }
+        &:hover{
+            background: linear-gradient($nav-color, $background-color);
         }
     }
     section.socials{
-        
 
         .social-header{
             display: flex;
