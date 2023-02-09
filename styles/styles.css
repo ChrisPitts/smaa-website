@@ -98,10 +98,7 @@ main .circle {
   border-radius: 50%;
 }
 main section {
-  background-color: #e52a83;
-  margin: 10px 100px;
   padding: 20px;
-  border-radius: 20px;
   height: calc(100vh - 100px);
 }
 main section.about {

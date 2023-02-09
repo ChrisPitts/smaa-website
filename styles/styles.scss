@@ -1,8 +1,11 @@
-$font-color: white;
+
 $background-color: #a8bcef;
 // #a8bcef
 $nav-color: #4da8dd;
 $container-background-color: #e52a83;
+
+// ! This color needs to be changed for readability
+$font-color: white;
 
 $triangle-size: 5px;
 
@@ -13,7 +16,7 @@ $nav-height: 100px;
 
 *{
     box-sizing: border-box;
-    color: white;
+    color: $font-color;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -131,10 +134,8 @@ main{
 
     .circle{border-radius: 50%;}
     section{
-        background-color: $container-background-color;
-        margin: 10px 100px;
+        // background-color: $container-background-color;
         padding: 20px;
-        border-radius: 20px;
         height: calc(100vh - $nav-height);
     }
     
